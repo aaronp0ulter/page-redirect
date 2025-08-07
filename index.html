@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+  <script>
+    window.onload = function() {
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      if (isMobile) {
+        window.location.href = "https://your-mobile-link.com";
+      } else {
+        window.location.href = "https://your-desktop-link.com";
+      }
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting... If nothing happens, <a href="https://your-desktop-link.com">click here</a>.</p>
+</body>
+</html>
